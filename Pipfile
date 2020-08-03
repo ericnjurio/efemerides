@@ -8,6 +8,7 @@ flake8 = "*"
 ipython = "*"
 isort = "*"
 coverage = "*"
+httpie="*"
 
 [packages]
 django = "==2.2"
