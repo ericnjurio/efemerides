@@ -1,3 +1,5 @@
+from django.views.decorators.cache import cache_page
+
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -20,6 +22,7 @@ from .serializers import CommemorationSerializer
         ),
     )
 )
+@cache_page(60 * 15)
 @api_view(['GET'])
 def commemoration_detail(request):
     """Get commemorations details."""
