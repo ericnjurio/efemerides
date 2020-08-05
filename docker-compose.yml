@@ -1,0 +1,20 @@
+    version: '3'
+    
+    services:
+        db:
+            image: postgres
+            environment:
+                - POSTGRES_DB=postgres
+                - POSTGRES_USER=postgres
+                - POSTGRES_PASSWORD=postgres
+        web:
+            build: .
+            # command: tail -f LICENSE
+            command: /project/tools/start_server.sh
+            ports:
+                - "8000:8000"
+            depends_on:
+                - db
+            environment:
+                # - DJANGO_SETTINGS_MODULE=config.settings
+                - SECRET_KEY=${SECRET_KEY}
