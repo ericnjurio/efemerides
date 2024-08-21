@@ -6,16 +6,9 @@ This project is sample api code.
 
 ## Installation
 
-### Prerequisities
+### Prerequisites
 
-
-In order to run this container you'll need docker installed.
-
-* [Windows](https://docs.docker.com/windows/started)
-* [OS X](https://docs.docker.com/mac/started/)
-* [Linux](https://docs.docker.com/linux/started/)
-
-And [docker-compose](https://github.com/docker/compose) installed.
+In order to run this container, you'll need [docker installed](https://docs.docker.com/get-started/get-docker/), and [docker-compose](https://github.com/docker/compose) installed.
 
 ### Start the services
 
